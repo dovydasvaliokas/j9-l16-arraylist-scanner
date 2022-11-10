@@ -35,6 +35,18 @@ public class ArrayListVeiksmai {
 
         skaiciai.remove(3);
         System.out.println("skaiciai = " + skaiciai);
+        skaiciai.remove(Integer.valueOf(15));
+        System.out.println("skaiciai = " + skaiciai);
+        skaiciai.removeAll(Arrays.asList(15, 6));
+        System.out.println("skaiciai = " + skaiciai);
 
+        skaiciai.set(0, 20);
+        System.out.println("skaiciai = " + skaiciai);
+
+        skaiciai.set(skaiciai.size() - 2, -100);
+        System.out.println("skaiciai = " + skaiciai);
+
+        skaiciai.clear();
+        System.out.println("skaiciai = " + skaiciai);
     }
 }
